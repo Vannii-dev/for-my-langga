@@ -1,0 +1,1698 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#fff1f5" />
+
+    <title>For My Langga ♡</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Great+Vibes&family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      :root {
+        --pink: #f3a6bd;
+        --pink-dark: #df789b;
+        --pink-light: #fff1f5;
+        --pink-soft: #ffe3eb;
+        --rose: #b85e7c;
+        --cream: #fffaf8;
+        --text: #59434d;
+        --muted: #987d88;
+        --white: #ffffff;
+        --shadow: 0 15px 45px rgba(190, 112, 139, 0.12);
+        --radius: 24px;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        font-family: "DM Sans", sans-serif;
+        color: var(--text);
+        background: var(--cream);
+        overflow-x: hidden;
+      }
+
+      button {
+        font-family: inherit;
+        cursor: pointer;
+      }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      .script {
+        font-family: "Great Vibes", cursive;
+      }
+
+      .serif {
+        font-family: "Playfair Display", serif;
+      }
+
+      .container {
+        width: min(1100px, 90%);
+        margin: auto;
+      }
+
+      .section {
+        padding: 100px 0;
+      }
+
+      .section-heading {
+        text-align: center;
+        margin-bottom: 50px;
+      }
+
+      .section-heading .eyebrow {
+        color: var(--pink-dark);
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-size: 0.72rem;
+        font-weight: 700;
+        margin-bottom: 12px;
+      }
+
+      .section-heading h2 {
+        font-family: "Playfair Display", serif;
+        font-size: clamp(2rem, 5vw, 3rem);
+        font-weight: 500;
+      }
+
+      .section-heading p {
+        color: var(--muted);
+        margin-top: 12px;
+        line-height: 1.8;
+      }
+
+      .btn {
+        border: none;
+        padding: 14px 25px;
+        border-radius: 50px;
+        background: var(--pink-dark);
+        color: white;
+        font-weight: 700;
+        font-size: 0.9rem;
+        transition: 0.3s;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+      }
+
+      .btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 25px rgba(223, 120, 155, 0.3);
+      }
+
+      .btn-outline {
+        background: transparent;
+        color: var(--rose);
+        border: 1px solid var(--pink);
+      }
+
+      .btn-outline:hover {
+        background: var(--pink-light);
+        box-shadow: none;
+      }
+
+      /* Navigation */
+
+      nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 100;
+        padding: 18px 0;
+        background: rgba(255, 250, 248, 0.85);
+        backdrop-filter: blur(15px);
+        border-bottom: 1px solid rgba(243, 166, 189, 0.15);
+      }
+
+      .nav-inner {
+        width: min(1100px, 90%);
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        font-family: "Great Vibes", cursive;
+        font-size: 2rem;
+        color: var(--pink-dark);
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 25px;
+        align-items: center;
+        font-size: 0.82rem;
+        color: var(--muted);
+      }
+
+      .nav-links a:hover {
+        color: var(--pink-dark);
+      }
+
+      .menu-toggle {
+        display: none;
+        border: none;
+        background: transparent;
+        font-size: 1.5rem;
+        color: var(--rose);
+      }
+
+      /* Hero */
+
+      .hero {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        padding: 130px 20px 80px;
+        background:
+          radial-gradient(circle at 15% 20%, #ffe1eb 0, transparent 30%),
+          radial-gradient(circle at 85% 80%, #fce5ef 0, transparent 30%),
+          linear-gradient(135deg, #fff9f7, #fff0f5);
+      }
+
+      .hero-content {
+        max-width: 800px;
+        position: relative;
+        z-index: 2;
+      }
+
+      .hero-label {
+        display: inline-block;
+        background: white;
+        color: var(--pink-dark);
+        border: 1px solid #f8d5e0;
+        border-radius: 50px;
+        padding: 9px 18px;
+        font-size: 0.75rem;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+      }
+
+      .hero h1 {
+        font-family: "Playfair Display", serif;
+        font-size: clamp(3rem, 9vw, 6.5rem);
+        font-weight: 500;
+        line-height: 1.1;
+        color: #714c5c;
+      }
+
+      .hero h1 span {
+        display: block;
+        font-family: "Great Vibes", cursive;
+        color: var(--pink-dark);
+        font-size: clamp(4rem, 12vw, 8rem);
+        margin-top: 5px;
+      }
+
+      .hero-description {
+        max-width: 570px;
+        margin: 25px auto 30px;
+        color: var(--muted);
+        line-height: 1.9;
+        font-size: 1rem;
+      }
+
+      .hero-date {
+        color: var(--rose);
+        font-size: 0.8rem;
+        letter-spacing: 2px;
+        margin-bottom: 30px;
+        font-weight: 700;
+      }
+
+      .hero-heart {
+        position: absolute;
+        color: #f3a6bd;
+        opacity: 0.5;
+        animation: float 5s ease-in-out infinite;
+        pointer-events: none;
+      }
+
+      .heart-one {
+        top: 20%;
+        left: 12%;
+        font-size: 3rem;
+      }
+
+      .heart-two {
+        top: 30%;
+        right: 12%;
+        font-size: 2rem;
+        animation-delay: 1s;
+      }
+
+      .heart-three {
+        bottom: 15%;
+        left: 20%;
+        font-size: 2rem;
+        animation-delay: 2s;
+      }
+
+      .heart-four {
+        bottom: 20%;
+        right: 20%;
+        font-size: 3rem;
+        animation-delay: 1.5s;
+      }
+
+      @keyframes float {
+        0%,
+        100% {
+          transform: translateY(0) rotate(-10deg);
+        }
+
+        50% {
+          transform: translateY(-20px) rotate(10deg);
+        }
+      }
+
+      /* Distance */
+
+      .distance-section {
+        background: white;
+        text-align: center;
+      }
+
+      .distance-card {
+        max-width: 800px;
+        margin: auto;
+        padding: 55px 30px;
+        background: var(--pink-light);
+        border-radius: 30px;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .distance-card p {
+        color: var(--muted);
+        line-height: 1.8;
+      }
+
+      .distance-route {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 25px;
+        margin: 40px 0;
+      }
+
+      .city {
+        font-family: "Playfair Display", serif;
+        font-size: clamp(1.4rem, 5vw, 2.5rem);
+        color: var(--rose);
+      }
+
+      .city-heart {
+        font-size: 2rem;
+        color: var(--pink-dark);
+        animation: heartbeat 1.5s infinite;
+      }
+
+      @keyframes heartbeat {
+        0%,
+        100% {
+          transform: scale(1);
+        }
+
+        15% {
+          transform: scale(1.25);
+        }
+
+        30% {
+          transform: scale(1);
+        }
+
+        45% {
+          transform: scale(1.15);
+        }
+      }
+
+      .distance-quote {
+        max-width: 500px;
+        margin: auto;
+        font-family: "Playfair Display", serif;
+        font-style: italic;
+        font-size: 1.15rem;
+        color: var(--rose);
+      }
+
+      /* Story */
+
+      .story-section {
+        background: var(--cream);
+      }
+
+      .story-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
+        align-items: center;
+      }
+
+      .story-image {
+        min-height: 430px;
+        border-radius: 30px;
+        background: linear-gradient(145deg, #ffe3eb, #f6c6d6);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 6rem;
+        box-shadow: var(--shadow);
+        overflow: hidden;
+      }
+
+      .story-image img {
+        width: 100%;
+        height: 100%;
+        min-height: 430px;
+        object-fit: cover;
+      }
+
+      .story-content .eyebrow {
+        color: var(--pink-dark);
+        letter-spacing: 3px;
+        font-size: 0.72rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+      }
+
+      .story-content h2 {
+        font-family: "Playfair Display", serif;
+        font-size: 2.5rem;
+        font-weight: 500;
+        margin-bottom: 20px;
+      }
+
+      .story-content p {
+        color: var(--muted);
+        line-height: 2;
+        margin-bottom: 15px;
+      }
+
+      .signature {
+        font-family: "Great Vibes", cursive;
+        color: var(--pink-dark);
+        font-size: 2rem;
+        margin-top: 20px;
+      }
+
+      /* Memories */
+
+      .memories-section {
+        background: white;
+      }
+
+      .memory-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 25px;
+      }
+
+      .memory-card {
+        background: var(--pink-light);
+        border-radius: 20px;
+        overflow: hidden;
+        transition: 0.3s;
+      }
+
+      .memory-card:hover {
+        transform: translateY(-7px);
+        box-shadow: var(--shadow);
+      }
+
+      .memory-photo {
+        height: 280px;
+        background: linear-gradient(135deg, #fbd6e2, #f8b7ce);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 3rem;
+        overflow: hidden;
+      }
+
+      .memory-photo img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .memory-caption {
+        padding: 22px;
+        text-align: center;
+      }
+
+      .memory-caption h3 {
+        font-family: "Playfair Display", serif;
+        color: var(--rose);
+        font-size: 1.15rem;
+        margin-bottom: 8px;
+      }
+
+      .memory-caption p {
+        font-size: 0.82rem;
+        color: var(--muted);
+        line-height: 1.7;
+      }
+
+      /* Special memory */
+
+      .special-section {
+        background: linear-gradient(135deg, #fff0f5, #fff9f7);
+      }
+
+      .special-card {
+        max-width: 850px;
+        margin: auto;
+        padding: 60px;
+        background: white;
+        border-radius: 30px;
+        text-align: center;
+        box-shadow: var(--shadow);
+      }
+
+      .special-icon {
+        font-size: 3rem;
+        margin-bottom: 20px;
+      }
+
+      .special-card h2 {
+        font-family: "Playfair Display", serif;
+        font-size: clamp(1.8rem, 5vw, 2.7rem);
+        font-weight: 500;
+        margin-bottom: 25px;
+      }
+
+      .special-card p {
+        color: var(--muted);
+        line-height: 2;
+        margin-bottom: 15px;
+      }
+
+      .special-card .highlight {
+        color: var(--rose);
+        font-family: "Playfair Display", serif;
+        font-style: italic;
+        font-size: 1.2rem;
+        margin-top: 25px;
+      }
+
+      /* Reasons */
+
+      .reasons-section {
+        background: white;
+      }
+
+      .reason-card {
+        max-width: 650px;
+        min-height: 260px;
+        margin: auto;
+        background: var(--pink-light);
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 45px;
+        box-shadow: var(--shadow);
+      }
+
+      .reason-number {
+        color: var(--pink-dark);
+        font-size: 0.75rem;
+        letter-spacing: 3px;
+        margin-bottom: 25px;
+        font-weight: 700;
+      }
+
+      .reason-text {
+        font-family: "Playfair Display", serif;
+        font-size: clamp(1.3rem, 4vw, 2rem);
+        color: var(--rose);
+        line-height: 1.6;
+      }
+
+      .reason-controls {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 30px;
+      }
+
+      .reason-progress {
+        margin-top: 20px;
+        color: var(--muted);
+        font-size: 0.8rem;
+      }
+
+      /* Open when */
+
+      .letters-section {
+        background: var(--pink-light);
+      }
+
+      .letters-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+      }
+
+      .letter-card {
+        border: 1px solid #f8d5e0;
+        border-radius: 20px;
+        background: white;
+        padding: 30px 20px;
+        text-align: center;
+        transition: 0.3s;
+        cursor: pointer;
+      }
+
+      .letter-card:hover {
+        transform: translateY(-5px);
+        box-shadow: var(--shadow);
+        border-color: var(--pink);
+      }
+
+      .letter-card .icon {
+        font-size: 2.3rem;
+        margin-bottom: 15px;
+      }
+
+      .letter-card h3 {
+        font-family: "Playfair Display", serif;
+        color: var(--rose);
+        font-size: 1.1rem;
+        margin-bottom: 10px;
+      }
+
+      .letter-card p {
+        font-size: 0.8rem;
+        color: var(--muted);
+      }
+
+      /* Promise */
+
+      .promise-section {
+        background: white;
+        text-align: center;
+      }
+
+      .promise-box {
+        max-width: 750px;
+        margin: auto;
+        padding: 55px 35px;
+        border: 1px solid #f5c6d5;
+        border-radius: 30px;
+        position: relative;
+      }
+
+      .promise-box .big-heart {
+        font-size: 3rem;
+        color: var(--pink-dark);
+        margin-bottom: 20px;
+      }
+
+      .promise-box h2 {
+        font-family: "Playfair Display", serif;
+        font-size: 2.2rem;
+        font-weight: 500;
+        margin-bottom: 20px;
+      }
+
+      .promise-box p {
+        color: var(--muted);
+        line-height: 2;
+      }
+
+      /* Voice note */
+
+      .voice-section {
+        background: linear-gradient(135deg, #fff1f5, #fffaf8);
+      }
+
+      .voice-card {
+        max-width: 600px;
+        margin: auto;
+        background: white;
+        padding: 45px 30px;
+        text-align: center;
+        border-radius: 30px;
+        box-shadow: var(--shadow);
+      }
+
+      .voice-icon {
+        font-size: 3rem;
+        margin-bottom: 15px;
+      }
+
+      .voice-card h2 {
+        font-family: "Playfair Display", serif;
+        font-size: 2rem;
+        margin-bottom: 10px;
+      }
+
+      .voice-card p {
+        color: var(--muted);
+        line-height: 1.8;
+        margin-bottom: 25px;
+        font-size: 0.9rem;
+      }
+
+      audio {
+        width: 100%;
+        accent-color: var(--pink-dark);
+      }
+
+      /* Birthday letter */
+
+      .birthday-section {
+        background: white;
+        text-align: center;
+      }
+
+      .birthday-card {
+        max-width: 750px;
+        margin: auto;
+        background: var(--pink-light);
+        padding: 55px 35px;
+        border-radius: 30px;
+      }
+
+      .birthday-card h2 {
+        font-family: "Great Vibes", cursive;
+        font-size: 4rem;
+        color: var(--pink-dark);
+        margin-bottom: 20px;
+      }
+
+      .birthday-card p {
+        color: var(--muted);
+        line-height: 2;
+        max-width: 550px;
+        margin: 0 auto 25px;
+      }
+
+      /* Footer */
+
+      footer {
+        padding: 45px 20px;
+        background: #fff1f5;
+        text-align: center;
+      }
+
+      footer .footer-logo {
+        font-family: "Great Vibes", cursive;
+        font-size: 2.5rem;
+        color: var(--pink-dark);
+        margin-bottom: 10px;
+      }
+
+      footer p {
+        font-size: 0.8rem;
+        color: var(--muted);
+        line-height: 1.8;
+      }
+
+      /* Modal */
+
+      .modal {
+        position: fixed;
+        inset: 0;
+        z-index: 300;
+        background: rgba(69, 39, 52, 0.55);
+        backdrop-filter: blur(7px);
+        display: none;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+      }
+
+      .modal.active {
+        display: flex;
+      }
+
+      .modal-content {
+        background: var(--cream);
+        width: min(550px, 100%);
+        max-height: 85vh;
+        overflow-y: auto;
+        padding: 45px 35px;
+        border-radius: 25px;
+        text-align: center;
+        position: relative;
+        animation: modalIn 0.3s ease;
+      }
+
+      @keyframes modalIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px) scale(0.97);
+        }
+
+        to {
+          opacity: 1;
+          transform: translateY(0) scale(1);
+        }
+      }
+
+      .modal-close {
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        background: transparent;
+        border: none;
+        color: var(--rose);
+        font-size: 1.5rem;
+      }
+
+      .modal-content h2 {
+        font-family: "Playfair Display", serif;
+        color: var(--rose);
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+      }
+
+      .modal-content p {
+        color: var(--muted);
+        line-height: 2;
+        white-space: pre-line;
+      }
+
+      /* Floating hearts */
+
+      .floating-heart {
+        position: fixed;
+        bottom: -30px;
+        color: var(--pink);
+        opacity: 0.7;
+        pointer-events: none;
+        z-index: 5;
+        animation: rise 6s linear forwards;
+      }
+
+      @keyframes rise {
+        0% {
+          transform: translateY(0) rotate(0);
+          opacity: 0;
+        }
+
+        15% {
+          opacity: 0.7;
+        }
+
+        100% {
+          transform: translateY(-110vh) rotate(45deg);
+          opacity: 0;
+        }
+      }
+
+      /* Responsive */
+
+      @media (max-width: 768px) {
+        .section {
+          padding: 75px 0;
+        }
+
+        .menu-toggle {
+          display: block;
+        }
+
+        .nav-links {
+          position: absolute;
+          top: 70px;
+          left: 0;
+          width: 100%;
+          padding: 25px;
+          background: var(--cream);
+          display: none;
+          flex-direction: column;
+          gap: 20px;
+          box-shadow: var(--shadow);
+        }
+
+        .nav-links.active {
+          display: flex;
+        }
+
+        .story-grid {
+          grid-template-columns: 1fr;
+          gap: 35px;
+        }
+
+        .story-image {
+          min-height: 300px;
+        }
+
+        .story-image img {
+          min-height: 300px;
+        }
+
+        .memory-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .memory-photo {
+          height: 330px;
+        }
+
+        .letters-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .special-card {
+          padding: 40px 25px;
+        }
+
+        .distance-route {
+          gap: 12px;
+        }
+
+        .city-heart {
+          font-size: 1.5rem;
+        }
+
+        .reason-card {
+          padding: 35px 20px;
+        }
+      }
+
+      @media (max-width: 430px) {
+        .letters-grid {
+          grid-template-columns: 1fr;
+        }
+
+        .birthday-card {
+          padding: 40px 22px;
+        }
+
+        .birthday-card h2 {
+          font-size: 3.4rem;
+        }
+
+        .hero-description {
+          font-size: 0.9rem;
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+          scroll-behavior: auto !important;
+          animation-duration: 0.01ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.01ms !important;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <nav>
+      <div class="nav-inner">
+        <a href="#home" class="logo">For My Langga ♡</a>
+
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          aria-label="Toggle navigation"
+        >
+          ☰
+        </button>
+
+        <div class="nav-links" id="navLinks">
+          <a href="#story">Our Story</a>
+          <a href="#memories">Memories</a>
+          <a href="#reasons">Reasons</a>
+          <a href="#letters">Open When</a>
+          <a href="#birthday">Birthday Letter</a>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+      <div class="hero-heart heart-one">♡</div>
+      <div class="hero-heart heart-two">♥</div>
+      <div class="hero-heart heart-three">♡</div>
+      <div class="hero-heart heart-four">♥</div>
+
+      <div class="hero-content">
+        <div class="hero-label">A little something made with love</div>
+
+        <h1>
+          Happy Birthday,
+          <span>My Langga</span>
+        </h1>
+
+        <p class="hero-description">
+          If I could give you the whole world today, I would. But since I can't
+          be there beside you, I made you something that carries a little piece
+          of my heart.
+        </p>
+
+        <div class="hero-date">NOVEMBER 23, 2026</div>
+
+        <button class="btn" onclick="scrollToSection('story')">
+          Start our little journey ♡
+        </button>
+      </div>
+    </section>
+
+    <!-- Distance -->
+    <section class="section distance-section">
+      <div class="container">
+        <div class="section-heading">
+          <div class="eyebrow">Even miles apart</div>
+          <h2>Two Cities, One Heart</h2>
+          <p>
+            Distance may separate us, but it will never change where my heart
+            belongs.
+          </p>
+        </div>
+
+        <div class="distance-card">
+          <p>
+            Somewhere between these two places is a love that keeps choosing
+            each other.
+          </p>
+
+          <div class="distance-route">
+            <div class="city">Manila</div>
+            <div class="city-heart">♡</div>
+            <div class="city">Iligan City</div>
+          </div>
+
+          <div class="distance-quote">
+            "Different cities, one home. No matter how far Manila is from
+            Iligan, my heart will always find its way to you."
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Our Story -->
+    <section class="section story-section" id="story">
+      <div class="container">
+        <div class="story-grid">
+          <div class="story-image">
+            <!-- Replace with your favorite couple photo -->
+            <img
+              src="assets/memory-1.jpg"
+              alt="A favorite memory together"
+              onerror="
+                this.style.display = 'none';
+                this.parentElement.innerHTML = '💗';
+              "
+            />
+          </div>
+
+          <div class="story-content">
+            <div class="eyebrow">A little story about us</div>
+
+            <h2 class="serif">My favorite person, my favorite story.</h2>
+
+            <p>
+              More than two years ago, I never imagined that I would find
+              someone who would become such a special part of my life.
+            </p>
+
+            <p>
+              Somehow, out of all the people in this world, I found you. And
+              every day, I am grateful that our paths crossed.
+            </p>
+
+            <p>
+              We've shared laughter, little adventures, unforgettable moments,
+              and even difficult days. Through all of them, one thing remains
+              the same: I still choose you.
+            </p>
+
+            <p>
+              Thank you for being my happiness, my comfort, and my favorite
+              person to come home to, even when we're miles apart.
+            </p>
+
+            <div class="signature">Forever yours ♡</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Memories -->
+    <section class="section memories-section" id="memories">
+      <div class="container">
+        <div class="section-heading">
+          <div class="eyebrow">Little moments, big memories</div>
+          <h2>Our Little Gallery</h2>
+          <p>Some moments deserve to be kept close forever.</p>
+        </div>
+
+        <div class="memory-grid">
+          <div class="memory-card">
+            <div class="memory-photo">
+              <img
+                src="assets/memory-1.jpg"
+                alt="Our favorite picture"
+                onerror="
+                  this.style.display = 'none';
+                  this.parentElement.innerHTML = '📸';
+                "
+              />
+            </div>
+
+            <div class="memory-caption">
+              <h3>One of My Favorites</h3>
+              <p>Every picture with you becomes a memory I want to keep.</p>
+            </div>
+          </div>
+
+          <div class="memory-card">
+            <div class="memory-photo">
+              <img
+                src="assets/memory-2.jpg"
+                alt="A special memory"
+                onerror="
+                  this.style.display = 'none';
+                  this.parentElement.innerHTML = '🌷';
+                "
+              />
+            </div>
+
+            <div class="memory-caption">
+              <h3>Our Little Adventures</h3>
+              <p>It doesn't matter where we go, as long as I'm with you.</p>
+            </div>
+          </div>
+
+          <div class="memory-card">
+            <div class="memory-photo">
+              <img
+                src="assets/memory-3.jpg"
+                alt="A happy moment together"
+                onerror="
+                  this.style.display = 'none';
+                  this.parentElement.innerHTML = '💕';
+                "
+              />
+            </div>
+
+            <div class="memory-caption">
+              <h3>My Happy Place</h3>
+              <p>My favorite place will always be wherever you are.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Special Memory -->
+    <section class="section special-section">
+      <div class="container">
+        <div class="special-card">
+          <div class="special-icon">🌙</div>
+
+          <div class="eyebrow">A memory I'll never forget</div>
+
+          <h2>That One Unforgettable Trip</h2>
+
+          <p>
+            Remember that trip when going home became such a scary experience?
+            It was one of those moments when I realized just how precious it is
+            to have you safe beside me.
+          </p>
+
+          <p>
+            We went through something frightening, but I'm grateful that we're
+            here, that we're safe, and that we still get to make more memories
+            together.
+          </p>
+
+          <p>
+            I don't ever want us to take our time together for granted. I want
+            to take care of you, look after you, and make sure that we always
+            find our way home safely.
+          </p>
+
+          <div class="highlight">
+            "Let's make a lifetime of beautiful memories, and always look after
+            each other along the way."
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reasons -->
+    <section class="section reasons-section" id="reasons">
+      <div class="container">
+        <div class="section-heading">
+          <div class="eyebrow">A little reminder</div>
+          <h2>25 Reasons Why I Love You</h2>
+          <p>And honestly, 25 isn't even enough.</p>
+        </div>
+
+        <div class="reason-card">
+          <div class="reason-number" id="reasonNumber">REASON 01 OF 25</div>
+
+          <div class="reason-text" id="reasonText">
+            Because you make ordinary days feel special.
+          </div>
+        </div>
+
+        <div class="reason-controls">
+          <button class="btn btn-outline" id="previousReason">
+            ← Previous
+          </button>
+
+          <button class="btn" id="nextReason">Next reason ♡</button>
+        </div>
+
+        <div class="reason-progress" id="reasonProgress">1 / 25</div>
+      </div>
+    </section>
+
+    <!-- Open When Letters -->
+    <section class="section letters-section" id="letters">
+      <div class="container">
+        <div class="section-heading">
+          <div class="eyebrow">Little letters from me to you</div>
+          <h2>Open When...</h2>
+          <p>Whenever you need a little piece of me, open one of these.</p>
+        </div>
+
+        <div class="letters-grid">
+          <div class="letter-card" onclick="openLetter(0)">
+            <div class="icon">🥺</div>
+            <h3>You're Sad</h3>
+            <p>A little reminder that you're loved.</p>
+          </div>
+
+          <div class="letter-card" onclick="openLetter(1)">
+            <div class="icon">💭</div>
+            <h3>You Miss Me</h3>
+            <p>For those moments when the distance feels too much.</p>
+          </div>
+
+          <div class="letter-card" onclick="openLetter(2)">
+            <div class="icon">🌸</div>
+            <h3>You Need Confidence</h3>
+            <p>Because you deserve to see yourself the way I do.</p>
+          </div>
+
+          <div class="letter-card" onclick="openLetter(3)">
+            <div class="icon">😴</div>
+            <h3>You Can't Sleep</h3>
+            <p>A little bedtime message from me.</p>
+          </div>
+
+          <div class="letter-card" onclick="openLetter(4)">
+            <div class="icon">💗</div>
+            <h3>You Feel Unloved</h3>
+            <p>Never forget how much you mean to me.</p>
+          </div>
+
+          <div class="letter-card" onclick="openLetter(5)">
+            <div class="icon">☀️</div>
+            <h3>You Need a Smile</h3>
+            <p>Here's something to brighten your day.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Promise -->
+    <section class="section promise-section">
+      <div class="container">
+        <div class="promise-box">
+          <div class="big-heart">♡</div>
+
+          <h2>My Promise to You</h2>
+
+          <p>
+            I cannot promise that every day will be perfect. I cannot promise
+            that we will never have difficult moments. But I can promise to keep
+            choosing you, to keep learning how to love you better, and to keep
+            making an effort even on the days when things aren't easy.
+          </p>
+
+          <br />
+
+          <p>
+            I promise to listen, to understand, to respect you, and to remind
+            you that you're never alone in this.
+          </p>
+
+          <br />
+
+          <p>
+            One day, the distance will just be a chapter in our story. Until
+            then, let's keep building something beautiful.
+          </p>
+
+          <div class="signature">I choose you, always. ♡</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Voice Note -->
+    <section class="section voice-section">
+      <div class="container">
+        <div class="voice-card">
+          <div class="voice-icon">🎧</div>
+
+          <h2>A Little Voice Message</h2>
+
+          <p>
+            I wanted you to hear my voice today. It's not the same as having me
+            beside you, but I hope it makes you feel a little closer to me.
+          </p>
+
+          <p>
+            I'm so excited for the day when the distance between Manila and
+            Iligan is no longer something we have to worry about.
+          </p>
+
+          <audio controls preload="metadata">
+            <source src="assets/langga-voice-note.mp3" type="audio/mpeg" />
+            Your browser does not support audio playback.
+          </audio>
+
+          <p style="font-size: 0.72rem; margin-top: 15px">
+            A little piece of my heart, just for you. ♡
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Birthday Letter -->
+    <section class="section birthday-section" id="birthday">
+      <div class="container">
+        <div class="birthday-card">
+          <div style="font-size: 2.5rem; margin-bottom: 15px">🎂🌷💗</div>
+
+          <h2>To My Birthday Girl</h2>
+
+          <p>
+            Happy birthday, my love. I wish I could be there today to hold your
+            hand, kiss your forehead, give you the biggest hug, and watch you
+            smile as you celebrate another beautiful year of your life.
+          </p>
+
+          <p>
+            I hope you never forget how special you are. You deserve happiness,
+            peace, love, success, and every beautiful thing this world has to
+            offer.
+          </p>
+
+          <p>
+            Thank you for being part of my life. Thank you for the memories, the
+            laughter, the patience, and the love you've given me.
+          </p>
+
+          <p>
+            One day, I won't have to send you hugs through a screen or celebrate
+            your birthday from Manila to Iligan. I'll get to surprise you in
+            person, hold you close, and make memories without having to say
+            goodbye so soon.
+          </p>
+
+          <p>
+            Until that day comes, please remember that you are loved more than
+            words can explain.
+          </p>
+
+          <p>Happy birthday, Langga. I love you so much.</p>
+
+          <div class="signature">Your person, always. ♡</div>
+
+          <button class="btn" onclick="openBirthdayLetter()">
+            Open my final letter 💌
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-logo">For My Langga ♡</div>
+
+      <p>Made with love, from Manila to Iligan City.</p>
+
+      <p style="margin-top: 10px">
+        No matter the distance, you're always close to my heart.
+      </p>
+
+      <p style="margin-top: 20px; opacity: 0.7">
+        © 2026 | A little website made just for you.
+      </p>
+    </footer>
+
+    <!-- Letter Modal -->
+    <div
+      class="modal"
+      id="letterModal"
+      onclick="closeModalOnBackdrop(event, 'letterModal')"
+    >
+      <div class="modal-content">
+        <button
+          class="modal-close"
+          onclick="closeModal('letterModal')"
+          aria-label="Close"
+        >
+          ×
+        </button>
+
+        <div style="font-size: 2.5rem; margin-bottom: 15px">💌</div>
+
+        <h2 id="letterTitle">A letter for you</h2>
+
+        <p id="letterBody"></p>
+
+        <div class="signature" style="margin-top: 25px">
+          With all my love, ♡
+        </div>
+      </div>
+    </div>
+
+    <!-- Birthday Final Modal -->
+    <div
+      class="modal"
+      id="birthdayModal"
+      onclick="closeModalOnBackdrop(event, 'birthdayModal')"
+    >
+      <div class="modal-content">
+        <button
+          class="modal-close"
+          onclick="closeModal('birthdayModal')"
+          aria-label="Close"
+        >
+          ×
+        </button>
+
+        <div style="font-size: 3rem; margin-bottom: 15px">💗</div>
+
+        <h2>One Last Thing, Langga...</h2>
+
+        <p>
+          If I had to choose all over again, in every lifetime, in every version
+          of this world, I would still look for you. I hope we get to celebrate
+          countless more birthdays together. Here's to more adventures, more
+          laughter, more memories, more growing together, and a lifetime of
+          choosing each other. I love you, my birthday girl. Always.
+        </p>
+
+        <div class="signature">Forever and always. ♡</div>
+      </div>
+    </div>
+
+    <script>
+      /* =========================================
+           NAVIGATION
+        ========================================= */
+
+      const menuToggle = document.getElementById("menuToggle");
+      const navLinks = document.getElementById("navLinks");
+
+      menuToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("active");
+      });
+
+      document.querySelectorAll(".nav-links a").forEach((link) => {
+        link.addEventListener("click", () => {
+          navLinks.classList.remove("active");
+        });
+      });
+
+      function scrollToSection(id) {
+        document.getElementById(id).scrollIntoView({
+          behavior: "smooth",
+        });
+      }
+
+      /* =========================================
+           25 REASONS WHY I LOVE YOU
+        ========================================= */
+
+      const reasons = [
+        "Because you make ordinary days feel special.",
+        "Because your smile is one of my favorite things in this world.",
+        "Because I can be myself around you.",
+        "Because you make me feel at home.",
+        "Because even a simple conversation with you makes my day better.",
+        "Because I love the way you laugh.",
+        "Because you make distance feel worth enduring.",
+        "Because you have a beautiful heart.",
+        "Because you inspire me to become a better person.",
+        "Because I love sharing even the smallest moments with you.",
+        "Because you make me excited about our future.",
+        "Because you're my favorite person to talk to.",
+        "Because you make me feel appreciated.",
+        "Because I love your little quirks.",
+        "Because you make me feel lucky.",
+        "Because you are beautiful in ways you don't even realize.",
+        "Because I love taking care of you.",
+        "Because you make me believe in lasting love.",
+        "Because I can imagine a thousand adventures with you.",
+        "Because you make my heart happy.",
+        "Because I love how we keep growing together.",
+        "Because I want to celebrate every little victory with you.",
+        "Because even on difficult days, I still want us.",
+        "Because out of everyone, I would still choose you.",
+        "Simply because you're you, and that's already everything.",
+      ];
+
+      let currentReason = 0;
+
+      const reasonNumber = document.getElementById("reasonNumber");
+      const reasonText = document.getElementById("reasonText");
+      const reasonProgress = document.getElementById("reasonProgress");
+
+      function updateReason() {
+        reasonNumber.textContent = `REASON ${String(currentReason + 1).padStart(2, "0")} OF 25`;
+
+        reasonText.textContent = reasons[currentReason];
+
+        reasonProgress.textContent = `${currentReason + 1} / ${reasons.length}`;
+      }
+
+      document.getElementById("nextReason").addEventListener("click", () => {
+        currentReason = (currentReason + 1) % reasons.length;
+        updateReason();
+      });
+
+      document
+        .getElementById("previousReason")
+        .addEventListener("click", () => {
+          currentReason = (currentReason - 1 + reasons.length) % reasons.length;
+          updateReason();
+        });
+
+      updateReason();
+
+      /* =========================================
+           OPEN WHEN LETTERS
+        ========================================= */
+
+      const letters = [
+        {
+          title: "Open When You're Sad 🥺",
+          body: `Hey, Langga.
+
+                I wish I could be there right now to hug you and make everything feel a little lighter.
+
+                I know I can't always fix whatever is making you sad, but I want you to know that you don't have to carry everything alone.
+
+                It's okay to have bad days. It's okay to cry. It's okay to feel tired.
+
+                Please be gentle with yourself. You deserve the same kindness and love that you give to everyone else.
+
+                I may be far away, but I'm always here for you.
+
+                I love you. ♡`,
+        },
+        {
+          title: "Open When You Miss Me 💭",
+          body: `I miss you too, more than you probably realize.
+
+                If I could, I would teleport right beside you, hold you close, and stay there for as long as you wanted.
+
+                Until we can do that, remember that distance is only a part of our story. It doesn't define our love.
+
+                Somewhere in Manila, there's someone thinking about you, smiling because of you, and counting the days until he can see you again.
+
+                That's me, Langga. Always me. ♡`,
+        },
+        {
+          title: "Open When You Need Confidence 🌸",
+          body: `Hey, beautiful.
+
+                I hope you never underestimate yourself.
+
+                You're capable, you're strong, you're talented, and you're so much more amazing than you sometimes give yourself credit for.
+
+                Please don't compare your journey with anyone else's.
+
+                You don't need to be perfect to be worthy of love, respect, and happiness.
+
+                I believe in you. Even on the days when you struggle to believe in yourself.
+
+                I'm so proud of you. ♡`,
+        },
+        {
+          title: "Open When You Can't Sleep 😴",
+          body: `Hi, my sleepy girl.
+
+                I hope you're comfortable and warm right now.
+
+                Close your eyes, take a deep breath, and let the worries of today rest for a while.
+
+                You've done enough for today. You deserve to rest.
+
+                Imagine me beside you, gently holding your hand and reminding you that everything can wait until tomorrow.
+
+                Sleep well, Langga.
+
+                I wish I could kiss your forehead goodnight.
+
+                Sweet dreams. ♡`,
+        },
+        {
+          title: "Open When You Feel Unloved 💗",
+          body: `My love,
+
+                Please read this as many times as you need.
+
+                You are loved.
+
+                You are appreciated.
+
+                You are important.
+
+                You matter to me more than I can explain.
+
+                Even when we're busy, even when we're far apart, even when we don't get to talk as much as we want, that doesn't mean my love for you disappears.
+
+                I choose you on ordinary days, difficult days, and every day in between.
+
+                Never doubt that you have a special place in my heart. ♡`,
+        },
+        {
+          title: "Open When You Need a Smile ☀️",
+          body: `Hello, my favorite human!
+
+                First of all, smile for me. Yes, right now. I know you're probably making that cute face.
+
+                Here's your reminder that somewhere in this world, there's a person who thinks you're incredibly adorable.
+
+                Someone who loves your smile, your laugh, your little habits, and even the things you think are silly.
+
+                I hope something wonderful happens to you today.
+
+                And if it doesn't, I hope this little letter makes your day a little brighter.
+
+                I love you, Langga! ♡`,
+        },
+      ];
+
+      function openLetter(index) {
+        document.getElementById("letterTitle").textContent =
+          letters[index].title;
+
+        document.getElementById("letterBody").textContent = letters[index].body;
+
+        document.getElementById("letterModal").classList.add("active");
+
+        document.body.style.overflow = "hidden";
+      }
+
+      /* =========================================
+           BIRTHDAY LETTER
+        ========================================= */
+
+      function openBirthdayLetter() {
+        document.getElementById("birthdayModal").classList.add("active");
+        document.body.style.overflow = "hidden";
+      }
+
+      /* =========================================
+           MODAL CONTROLS
+        ========================================= */
+
+      function closeModal(id) {
+        document.getElementById(id).classList.remove("active");
+
+        if (!document.querySelector(".modal.active")) {
+          document.body.style.overflow = "";
+        }
+      }
+
+      function closeModalOnBackdrop(event, id) {
+        if (event.target.id === id) {
+          closeModal(id);
+        }
+      }
+
+      document.addEventListener("keydown", (event) => {
+        if (event.key === "Escape") {
+          document.querySelectorAll(".modal.active").forEach((modal) => {
+            closeModal(modal.id);
+          });
+        }
+      });
+
+      /* =========================================
+           FLOATING HEARTS
+        ========================================= */
+
+      function createFloatingHeart() {
+        const heart = document.createElement("div");
+
+        heart.className = "floating-heart";
+        heart.textContent = Math.random() > 0.5 ? "♡" : "♥";
+
+        heart.style.left = Math.random() * 100 + "vw";
+        heart.style.fontSize = Math.random() * 18 + 12 + "px";
+        heart.style.animationDuration = Math.random() * 3 + 5 + "s";
+
+        document.body.appendChild(heart);
+
+        setTimeout(() => {
+          heart.remove();
+        }, 8500);
+      }
+
+      if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+        setInterval(createFloatingHeart, 1200);
+      }
+    </script>
+  </body>
+</html>
